@@ -16,4 +16,6 @@ Several supervised machine learning algorithms will be implemented to predict th
 For each algorithm, the following will be used to determine how well each model has performed and the best performing model will be used to make movie recommendations.
   
 - Model's accuracy
+- Model's Absolute errors
+- Calculate mean absolute percentage error (MAPE)
 - Comparison of model's Y-tet values with Y_predictions
