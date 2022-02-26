@@ -1,9 +1,9 @@
 # Final-Project
 
-##**Topic Select**:
+## **Topic Select**:
 
-##**Reason For Selection**:
+## **Reason For Selection**:
 
-##**Questions Considered**:
+## **Questions Considered**:
 
-##**Project Plan Overview**:
+## **Project Plan Overview**:
