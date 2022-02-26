@@ -1,6 +1,5 @@
 # Final-Project
 
-Group 6 Final Project (1st Segment)
 ## **Topic Select**:
 
 ## **Reason For Selection**:
