@@ -30,6 +30,7 @@ What rating would a new film receive, when considered against other films listed
 
 #### Database & ERD Model:
 
+![This is an image](https://github.com/HelyxM/Final_Project/blob/e0d444b2bee72b22de1bf622e3f089934a93fa41/ERD.png)
 
 #### Machine Learning:
 - Several supervised machine learning algorithms will be implemented to predict the movie ratings:
