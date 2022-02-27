@@ -1,10 +1,10 @@
 # Final-Project
 
-## **Topic Select**:
+## **Topic Select**: Predict movie ratings and use predicted ratings to suggest movies to viewers based on thier specific likes
 
-## **Reason For Selection**:
+## **Reason For Selection**: Interesting topic and good dataset
 
-## **Questions Considered**:
+## **Questions Considered**: Target is predicted movie ratings by user for all movies in dataset. Features will be: Genre, Rating, Director, Tags.
 
 ## **Project Plan Overview**:
 ### Preprocessing data:
