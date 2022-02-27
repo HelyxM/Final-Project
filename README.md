@@ -26,13 +26,17 @@ What rating would a new film receive, when considered against other films listed
 * PostgresSQL
 
 #### Preprocessing data:
-- Pandas Corr method will be used to determine the correlation of specific features to the outcome to usderstand if a particular feature is important enough to be fed into the odel.
+- Pandas Corr method will be used to determine the correlation of specific features to the outcome to usderstand if a particular feature is important enough to be fed into the model.
 
 #### Database & ERD Model:
 
+<<<<<<< HEAD
 ![This is an image](https://github.com/HelyxM/Final_Project/blob/e0d444b2bee72b22de1bf622e3f089934a93fa41/ERD.png)
 
+=======
+>>>>>>> 6adab512e423f113540c843e3f4c5d84028a1ea6
 #### Machine Learning:
+
 - Several supervised machine learning algorithms will be implemented to predict the movie ratings:
   1. RandomForestRegressor  
   2. DecisionTreesRegressor
@@ -41,4 +45,5 @@ What rating would a new film receive, when considered against other films listed
   - Model's accuracy
   - Model's Absolute errors
   - Calculate mean absolute percentage error (MAPE)
-  - Comparison of model's Y-tet values with Y_predictions
+  - Comparison of model's Y-test values with Y_predictions
+ 
