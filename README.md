@@ -37,6 +37,10 @@ What rating would a new film receive, when considered against other films listed
 - Several supervised machine learning algorithms will be implemented to predict the movie ratings:
   1. RandomForestRegressor  
   2. DecisionTreesRegressor
+  3. GaussianProcessRegressor
+  4. ExtraTreeRegressor
+  5. LassoLinearRegressor
+  6. KNeighborsRegressor
 
 - For each algorithm, the following will be used to determine how well each model has performed and the best performing model will be used to make movie recommendations.
   - Model's accuracy
