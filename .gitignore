@@ -9,6 +9,9 @@ __pycache__/
 # CSV Files
 *.CSV
 
+# Config files
+config.py
+
 # Distribution / packaging
 .Python
 build/
