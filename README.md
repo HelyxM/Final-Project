@@ -50,12 +50,15 @@ What rating would a new film receive, when considered against other films listed
 #### Machine Learning:
 
 - Several supervised machine learning algorithms will be implemented to predict the movie ratings:
+  Model Testing File: [movies_ML_Analysis](movies_ML_Analysis.ipynb)
   1. RandomForestRegressor  
   2. DecisionTreesRegressor
-  3. GaussianProcessRegressor
-  4. ExtraTreeRegressor
-  5. LassoLinearRegressor
-  6. KNeighborsRegressor
+  3. LassoLinearRegressor
+  
+  Model Testing File: [Static_Data_Algorithm_Testing](Static_Data_Algorithm_Testing.ipynb)
+  5. ExtraTreeRegressor
+  6. GaussianProcessRegressor
+  7. KNeighborsRegressor
 
 - For each algorithm, the following will be used to determine how well each model has performed and the best performing model will be used to make movie recommendations.
   - Model's accuracy
