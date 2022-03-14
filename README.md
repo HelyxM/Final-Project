@@ -14,6 +14,16 @@ What rating would a new film receive, when considered against other films listed
 - [TMDB 5000 Movie Dataset- Kaggle](https://www.kaggle.com/tmdb/tmdb-movie-metadata)
 - [The Movies Dataset- Kaggle](https://www.kaggle.com/rounakbanik/the-movies-dataset?select=ratings_small.csv)
 
+### Google Slides
+[Google Slide](https://docs.google.com/presentation/d/1l5JNNvdjFWGLZJCt2bUP6EqvaZgqcJNhIDLShZntfgo/edit?usp=sharing)
+
+### Roles
+- Harry Manning (Sqaure Role)
+- Falguni Mital (Triangle Role)
+- David Kaye (Circle Role)
+- Daniel Villafane (Circle Role)
+- Jorge Claros (X role)
+
 ### Communication Protocols:
 1. Slack (Main point of Communication)
 2. Zoom (Meeting 2-3 times a week outside of classtime)
@@ -39,7 +49,7 @@ What rating would a new film receive, when considered against other films listed
   2. DecisionTreesRegressor
   3. GaussianProcessRegressor
   4. ExtraTreeRegressor
-  5. Lasso Linear Regressor
+  5. LassoLinearRegressor
   6. KNeighborsRegressor
 
 - For each algorithm, the following will be used to determine how well each model has performed and the best performing model will be used to make movie recommendations.
