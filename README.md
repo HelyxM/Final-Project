@@ -18,7 +18,7 @@ What rating would a new film receive, when considered against other films listed
 [Google Slide](https://docs.google.com/presentation/d/1l5JNNvdjFWGLZJCt2bUP6EqvaZgqcJNhIDLShZntfgo/edit?usp=sharing)
 
 ### Roles
-- Harry Manning (Sqaure Role)
+- Harry Manning (Square Role)
 - Falguni Mital (Triangle Role)
 - David Kaye (Circle Role)
 - Daniel Villafane (Circle Role)
