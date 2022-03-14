@@ -42,6 +42,9 @@ What rating would a new film receive, when considered against other films listed
 
 ![This is an image](https://github.com/HelyxM/Final_Project/blob/1bf223ade67ca1ce2543a376e9469ddbb0748b6c/ERD_revised_031322.PNG)
 
+##### PostgreSQL Database Layout
+- ![postgreSQL_db_layout](postgreSQL_db_layout.png)
+
 #### Dashboard Examples
 ![This is an image](https://github.com/HelyxM/Final_Project/blob/1bf223ade67ca1ce2543a376e9469ddbb0748b6c/IntialVis_Dashboard_Movie_RatingAsSelected.png)
 
