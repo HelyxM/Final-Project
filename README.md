@@ -40,7 +40,12 @@ What rating would a new film receive, when considered against other films listed
 
 #### Database & ERD Model:
 
-![This is an image](https://github.com/HelyxM/Final_Project/blob/e0d444b2bee72b22de1bf622e3f089934a93fa41/ERD.png)
+![This is an image](https://github.com/HelyxM/Final_Project/blob/1bf223ade67ca1ce2543a376e9469ddbb0748b6c/ERD_revised_031322.PNG)
+
+#### Dashboard Examples
+![This is an image](https://github.com/HelyxM/Final_Project/blob/1bf223ade67ca1ce2543a376e9469ddbb0748b6c/IntialVis_Dashboard_Movie_RatingAsSelected.png)
+
+![This is an image](https://github.com/HelyxM/Final_Project/blob/1bf223ade67ca1ce2543a376e9469ddbb0748b6c/IntialVis_OverallRating_vs_%23ofRatings.png)
 
 #### Machine Learning:
 
