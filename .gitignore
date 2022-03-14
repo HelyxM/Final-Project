@@ -8,7 +8,10 @@ __pycache__/
 # C extensions
 *.so
 
-# Python Config File
+# CSV Files
+*.CSV
+
+# Config files
 config.py
 
 # Distribution / packaging
