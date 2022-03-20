@@ -51,21 +51,53 @@ What rating would a new film receive, when considered against other films listed
 ![This is an image](https://github.com/HelyxM/Final_Project/blob/1bf223ade67ca1ce2543a376e9469ddbb0748b6c/IntialVis_OverallRating_vs_%23ofRatings.png)
 
 #### Machine Learning:
+Regression techinique is used to find out the relationship between a single dependent variable (target variable) on the several independent ones (features). 
 
-- Several supervised machine learning algorithms will be implemented to predict the movie ratings:
+For this analysis several regression machine learning techniques from sklearn library are implemented to predict the movie ratings:
+
   - *Model Testing File:* [movies_ML_Analysis](movies_ML_Analysis.ipynb)
-  1. RandomForestRegressor  
-  2. DecisionTreesRegressor
-  3. LassoLinearRegressor
+  1. Linear Regression:   finds out a linear relationship between a dependent variable and the other given independent variables.  Prone to overfitting and handles outliers badly.
+  2. Lasso Linear Regressor: this technique is basically a shrinkage and variable selection method and it helps to determine which of the predictors are most important. The purpose of lasso is to stabilize the linear regression and make it more robust against outlier, overfitting.
+  3. Random Forest Regressor:  this technique samples the data and build several smaller, simpler decision trees. Each tree is simpler because it is built from a random subset of features.
   
   - *Model Testing File:* [Static_Data_Algorithm_Testing](Static_Data_Algorithm_Testing.ipynb)
-  5. ExtraTreeRegressor
-  6. GaussianProcessRegressor
-  7. KNeighborsRegressor
+  4. Gaussian Process Regressor: generic supervised learning method designed to solve regression and probabilistic classification problems
+  5. Decision Trees: Decision trees are good at capturing non-linear interaction between the features and the target variable. 
+  6. Extra Tree Regressor - An extremely randomized tree regressor.  Extra-trees differ from classic decision trees in the way they are built
+  7. KNeighbors Regressor - Regression based on k-nearest neighbors.  The target is predicted by local interpolation of the targets associated of the nearest neighbors in the training set.
 
-- For each algorithm, the following will be used to determine how well each model has performed and the best performing model will be used to make movie recommendations.
-  - Model's accuracy
-  - Model's Absolute errors
-  - Calculate mean absolute percentage error (MAPE)
-  - Comparison of model's Y-test values with Y_predictions
- 
+
+Features:
+
+- Movie Genre
+- Movie Length
+- Movie Cast
+- Movie Year
+
+Target:
+
+- Movie Ratings
+
+Dataset is split into two parts - 75% of the data is allocated to training and 25% is allocated to testing using train_test_split from sklearn library.
+
+Model Evaluation:
+
+R Squared will be used to determine how well each model has performed and the best performing model will be used to make movie recommendations.
+
+Results:
+
+The two linear regression techniques which gave the best R Squared values are:
+- Decision Trees Regressor: 
+    R Squared: 
+- Random Forest Regressor: 
+    R Squared:
+
+The remaining techniques Linear Regresion, Lasso, Gaussian Process Regressor, KNeighbor Regressor resulted in lower R Squared values and were not considered and the Gaussian Regressor Technique requires more memory than currently availalbe on the machine to complete it.
+
+
+The Decision Tress Regressor technique was chosen to predict the movie ratings as it provided the best R Squared values.  
+
+R-squared of 20% is the percentage of the movie ratings variation that a linear model explains. The better the R-squared, the better the regression model fits the observations. 
+
+Although R Squared value is low, it can improved by adding additional features to the model.
+
