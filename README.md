@@ -101,5 +101,3 @@ R-squared of 20% is the percentage of the movie ratings variation that a linear 
 
 Although R Squared value is low, it can improved by adding additional features to the model.
 
-
-
