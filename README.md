@@ -1,7 +1,7 @@
-# Final-Project
+# Creating An Analysis of the Trends Between Films and User Ratings of Them
 
-### **Segment 2**:
-Films
+### **Segment 3**:
+A Film-Rating Database
 
 #### **Reason For Selection**:
 The reason we selected this topic is because streaming services are currently on the rise. There are multiple streaming services to choose from and what's better than a streaming service that knows the consumer best? By taking our algorithm we are able to predict which new film would best fit the consumer. 
