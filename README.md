@@ -40,27 +40,27 @@ What rating would a new film receive, when considered against other films listed
 
 #### Database & ERD Model:
 
-![This is an image](https://github.com/HelyxM/Final_Project/blob/1bf223ade67ca1ce2543a376e9469ddbb0748b6c/ERD_revised_031322.PNG)
+![ERD_revised_031322](Images/ERD_revised_031322.PNG)
 
 ##### PostgreSQL Database Layout
-- ![postgreSQL_db_layout](postgreSQL_db_layout.png)
+- ![postgreSQL_db_layout](Images/postgreSQL_db_layout.png)
 
 #### Dashboard Examples
-![This is an image](https://github.com/HelyxM/Final_Project/blob/1bf223ade67ca1ce2543a376e9469ddbb0748b6c/IntialVis_Dashboard_Movie_RatingAsSelected.png)
+![IntialVis_Dashboard_Movie_RatingAsSelected](Images/IntialVis_Dashboard_Movie_RatingAsSelected.png)
 
-![This is an image](https://github.com/HelyxM/Final_Project/blob/1bf223ade67ca1ce2543a376e9469ddbb0748b6c/IntialVis_OverallRating_vs_%23ofRatings.png)
+![IntialVis_OverallRating_vs_%23ofRatings](Images/IntialVis_OverallRating_vs_%23ofRatings.png)
 
 #### Machine Learning:
 Regression techinique is used to find out the relationship between a single dependent variable (target variable) on the several independent ones (features). 
 
 For this analysis several regression machine learning techniques from sklearn library are implemented to predict the movie ratings:
 
-  - *Model Testing File:* [movies_ML_Analysis](movies_ML_Analysis.ipynb)
+  - *Model Testing File:* [movies_ML_Analysis](Jupyter_Notebook_Files/movies_ML_Analysis.ipynb)
   1. Linear Regression:   finds out a linear relationship between a dependent variable and the other given independent variables.  Prone to overfitting and handles outliers badly.
   2. Lasso Linear Regressor: this technique is basically a shrinkage and variable selection method and it helps to determine which of the predictors are most important. The purpose of lasso is to stabilize the linear regression and make it more robust against outlier, overfitting.
   3. Random Forest Regressor:  this technique samples the data and build several smaller, simpler decision trees. Each tree is simpler because it is built from a random subset of features.
   
-  - *Model Testing File:* [Static_Data_Algorithm_Testing](Static_Data_Algorithm_Testing.ipynb)
+  - *Model Testing File:* [Static_Data_Algorithm_Testing](Jupyter_Notebook_Files/Static_Data_Algorithm_Testing.ipynb)
   4. Gaussian Process Regressor: generic supervised learning method designed to solve regression and probabilistic classification problems
   5. Decision Trees: Decision trees are good at capturing non-linear interaction between the features and the target variable. 
   6. Extra Tree Regressor - An extremely randomized tree regressor.  Extra-trees differ from classic decision trees in the way they are built
