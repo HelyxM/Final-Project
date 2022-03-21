@@ -91,7 +91,7 @@ Results:
 
 The two linear regression techniques which gave the best R Squared values are:
 - Decision Trees Regressor: 
-    R Squared: 0.18949931054992308
+    R Squared: 0.18955758578603576
     - [Jupyter Notebook File with Code](Jupyter_Notebook_Files/ML_DF_Creation_and_Testing.ipynb)
 - Random Forest Regressor: 
     R Squared: 0.06629806453758591
