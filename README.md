@@ -88,16 +88,15 @@ Results:
 
 The two linear regression techniques which gave the best R Squared values are:
 - Decision Trees Regressor: 
-    R Squared: 
+    R Squared: 0.18949931054992308
 - Random Forest Regressor: 
-    R Squared:
+    R Squared: 0.06629806453758591
 
-The remaining techniques Linear Regresion, Lasso, Gaussian Process Regressor, KNeighbor Regressor resulted in lower R Squared values and were not considered and the Gaussian Regressor Technique requires more memory than currently availalbe on the machine to complete it.
+The remaining techniques: Linear Regresion, Lasso, Gaussian Process Regressor, KNeighbor Regressor, all resulted in lower R Squared values and were not considered for generating the final model predictions. In addition, the Gaussian Regressor Technique requires more memory than currently available on any machine to run the full dataset, and reduced versions of the dataset would limit the use that such a model would offer for understanding our full dataset.
 
+We concluded the Decision Tree Regressor was the ideal algorithm to create a model and predict movie ratings, as it provided the best R Squared values in all tests.  
 
-The Decision Tress Regressor technique was chosen to predict the movie ratings as it provided the best R Squared values.  
+A Coefficient of Determination(R-Squared) value returned by the model is the percentage match between the model's predicted values and the dataset's real values. The closer an R-Squared value is to 1.0 (or 100%) the better the model performs in predicting target value based on the relevant features included in the dataset.
 
-R-squared of 20% is the percentage of the movie ratings variation that a linear model explains. The better the R-squared, the better the regression model fits the observations. 
-
-Although R Squared value is low, it can improved by adding additional features to the model.
+Although the R-Squared value is low, it reflects the variance between the predicted and real values across millions of data rows, indicating there is a limit to how close the model's accuracy can get to 1.0. The largest restriction in reaching a high R-Squared value is how the variance compounds with each inaccurate prediction and the large number of rows will amplify the impact of all inaccuracies.
 
