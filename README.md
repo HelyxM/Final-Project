@@ -43,7 +43,7 @@ What rating would a new film receive, when considered against other films listed
 
 #### Database & ERD Model:
 
-![ERD_revised_031322](Images/ERD_revised_031322.PNG)
+![ERD_revised_031322](Images/erd_032022.PNG)
 
 ##### PostgreSQL Database Layout
 - ![postgreSQL_db_layout](Images/postgreSQL_db_layout.png)
