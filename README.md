@@ -55,17 +55,16 @@ Regression techinique is used to find out the relationship between a single depe
 
 For this analysis several regression machine learning techniques from sklearn library are implemented to predict the movie ratings:
 
-  - *[Selected Models Testing File:](Jupyter_Notebook_Files/movies_ML_Analysis.ipynb)*
   1. Linear Regression:   finds out a linear relationship between a dependent variable and the other given independent variables.  Prone to overfitting and handles outliers badly.
   2. Lasso Linear Regressor: this technique is basically a shrinkage and variable selection method and it helps to determine which of the predictors are most important. The purpose of lasso is to stabilize the linear regression and make it more robust against outlier, overfitting.
   3. Random Forest Regressor:  this technique samples the data and build several smaller, simpler decision trees. Each tree is simpler because it is built from a random subset of features.
+  - *[Selected Models Testing File](Jupyter_Notebook_Files/movies_ML_Analysis.ipynb)*
   
-  - *[Selected Models Testing File:](Jupyter_Notebook_Files/Static_Data_Algorithm_Testing.ipynb)*
   4. Gaussian Process Regressor: generic supervised learning method designed to solve regression and probabilistic classification problems
   5. Decision Trees: Decision trees are good at capturing non-linear interaction between the features and the target variable. 
   6. Extra Tree Regressor - An extremely randomized tree regressor.  Extra-trees differ from classic decision trees in the way they are built
   7. KNeighbors Regressor - Regression based on k-nearest neighbors.  The target is predicted by local interpolation of the targets associated of the nearest neighbors in the training set.
-
+  - *[Selected Models Testing File](Jupyter_Notebook_Files/Static_Data_Algorithm_Testing.ipynb)*
 
 Features:
 
