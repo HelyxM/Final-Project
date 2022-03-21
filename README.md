@@ -1,4 +1,4 @@
-# Creating An Analysis of the Trends Between Films and User Ratings of Them
+# An Analysis of the Trends Between Films and User Ratings of Them
 
 ### **Segment 3**:
 A Film-Rating Database
