@@ -55,12 +55,12 @@ Regression techinique is used to find out the relationship between a single depe
 
 For this analysis several regression machine learning techniques from sklearn library are implemented to predict the movie ratings:
 
-  - *Model Testing File:* [movies_ML_Analysis](Jupyter_Notebook_Files/movies_ML_Analysis.ipynb)
+  - *[Selected Models Testing File:](Jupyter_Notebook_Files/movies_ML_Analysis.ipynb)*
   1. Linear Regression:   finds out a linear relationship between a dependent variable and the other given independent variables.  Prone to overfitting and handles outliers badly.
   2. Lasso Linear Regressor: this technique is basically a shrinkage and variable selection method and it helps to determine which of the predictors are most important. The purpose of lasso is to stabilize the linear regression and make it more robust against outlier, overfitting.
   3. Random Forest Regressor:  this technique samples the data and build several smaller, simpler decision trees. Each tree is simpler because it is built from a random subset of features.
   
-  - *Model Testing File:* [Static_Data_Algorithm_Testing](Jupyter_Notebook_Files/Static_Data_Algorithm_Testing.ipynb)
+  - *[Selected Models Testing File:](Jupyter_Notebook_Files/Static_Data_Algorithm_Testing.ipynb)*
   4. Gaussian Process Regressor: generic supervised learning method designed to solve regression and probabilistic classification problems
   5. Decision Trees: Decision trees are good at capturing non-linear interaction between the features and the target variable. 
   6. Extra Tree Regressor - An extremely randomized tree regressor.  Extra-trees differ from classic decision trees in the way they are built
@@ -87,8 +87,9 @@ R Squared will be used to determine how well each model has performed and the be
 Results:
 
 The two linear regression techniques which gave the best R Squared values are:
-- Decision Trees Regressor: [Jupyter Notebook File with Code](Jupyter_Notebook_Files/ML_DF_Creation_and_Testing.ipynb)
+- Decision Trees Regressor: 
     R Squared: 0.18949931054992308
+    - [Jupyter Notebook File with Code](Jupyter_Notebook_Files/ML_DF_Creation_and_Testing.ipynb)
 - Random Forest Regressor: 
     R Squared: 0.06629806453758591
 
