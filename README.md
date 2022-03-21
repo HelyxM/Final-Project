@@ -91,7 +91,7 @@ The two linear regression techniques which gave the best R Squared values are:
     - [Jupyter Notebook File with Code](Jupyter_Notebook_Files/ML_DF_Creation_and_Testing.ipynb)
 - Random Forest Regressor: 
     R Squared: 0.06629806453758591
-
+    - [Jupyter Notebook File With Code](Jupyter_Notebook_Files/movies_ML_Analysis.ipynb)
 The remaining techniques: Linear Regresion, Lasso, Gaussian Process Regressor, KNeighbor Regressor, all resulted in lower R Squared values and were not considered for generating the final model predictions. In addition, the Gaussian Regressor Technique requires more memory than currently available on any machine to run the full dataset, and reduced versions of the dataset would limit the use that such a model would offer for understanding our full dataset.
 
 We concluded the Decision Tree Regressor was the ideal algorithm to create a model and predict movie ratings, as it provided the best R Squared values in all tests.  
