@@ -34,6 +34,9 @@ What rating would a new film receive, when considered against other films listed
 #### Technology Used:
 * Jupyter notebook
 * PostgresSQL
+* PowerBI
+* Amazon Web Services ERD Host
+* Google Slides
 
 #### Preprocessing data:
 - Pandas Corr method will be used to determine the correlation of specific features to the outcome to usderstand if a particular feature is important enough to be fed into the model.
