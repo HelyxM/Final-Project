@@ -72,9 +72,10 @@ For this analysis several regression machine learning techniques from sklearn li
 Features:
 
 - Movie Genre
-- Movie Length
+- Movie Duration
 - Movie Cast
 - Movie Year
+- Movie ID
 
 Target:
 
