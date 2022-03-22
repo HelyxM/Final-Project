@@ -54,6 +54,7 @@ What rating would a new film receive, when considered against other films listed
 ![IntialVis_OverallRating_vs_%23ofRatings](Images/IntialVis_OverallRating_vs_%23ofRatings.png)
 
 #### Machine Learning:
+
 Regression techinique is used to find out the relationship between a single dependent variable (target variable) on the several independent ones (features). 
 
 For this analysis several regression machine learning techniques from sklearn library are implemented to predict the movie ratings:
@@ -69,13 +70,47 @@ For this analysis several regression machine learning techniques from sklearn li
   7. KNeighbors Regressor - Regression based on k-nearest neighbors.  The target is predicted by local interpolation of the targets associated of the nearest neighbors in the training set.
   - *[Selected Models Testing File](Jupyter_Notebook_Files/Static_Data_Algorithm_Testing.ipynb)*
 
+Preprocessing Data:
+
+
+Data Selection Process included :
+- Reviewing availalbe data columns, types, missing data
+- Removed Nulls
+- Removed Duplicates
+
+Movies Dataset:
+- Bin Movie Runtime into 5 bins [MoviesRuntime.PNG](Images/MoviesRuntime.PNG)
+- Bin Movie Release Year into 9 bins [MovieReleaseYearBins.PNG](Images/MovieReleaseYearBins.PNG)
+- Filter Movie Runtime to keep moves greater than 60 min and less than 180 minutes
+
+Ratings Dataset:
+- Filter Ratings - Keep ratings for movies which have more than 5000 ratings 
+
+Movie Genre Dataset:
+- Transform Movie Genre from Category to Numerical Value
+
+Scale Data using Standard Scalar
+
+
+Feature Selection Techniques Used:
+
+- Correlation:
+
+![correlation_heatmap.PNG](Images/correlation_heatmap.PNG)
+
+- Random Forest Importance
+Features Importance list: ![RandomForestFeatureImpList.PNG](Images/RandomForestFeatureImpList.PNG.PNG)
+
+![RandomForestFeatureImpFeatures.PNG](Images/RandomForestImpFeatures.PNG)
+
+
 Features:
 
 - Movie Genre
-- Movie Duration
-- Movie Cast
-- Movie Year
-- Movie ID
+- Movie Runtime
+- Movie Release Year
+- Movie Cast ID 
+- Movie Cast Gender
 
 Target:
 
@@ -94,7 +129,7 @@ The two linear regression techniques which gave the best R Squared values are:
     R Squared: 0.18955758578603576
     - [Jupyter Notebook File with Code](Jupyter_Notebook_Files/ML_DF_Creation_and_Testing.ipynb)
 - Random Forest Regressor: 
-    R Squared: 0.06629806453758591
+    R Squared: 0.06641313954915906
     - [Jupyter Notebook File With Code](Jupyter_Notebook_Files/movies_ML_Analysis.ipynb)
     
 The remaining techniques: Linear Regresion, Lasso, Gaussian Process Regressor, KNeighbor Regressor, all resulted in lower R Squared values and were not considered for generating the final model predictions. In addition, the Gaussian Regressor Technique requires more memory than currently available on any machine to run the full dataset, and reduced versions of the dataset would limit the use that such a model would offer for understanding our full dataset.
