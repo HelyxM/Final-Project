@@ -38,8 +38,6 @@ What rating would a new film receive, when considered against other films listed
 * Amazon Web Services ERD Host
 * Google Slides
 
-#### Preprocessing data:
-- Pandas Corr method will be used to determine the correlation of specific features to the outcome to usderstand if a particular feature is important enough to be fed into the model.
 
 #### Database & ERD Model:
 
@@ -55,6 +53,8 @@ What rating would a new film receive, when considered against other films listed
 
 #### Machine Learning:
 
+##### ML Techniques Used:
+
 Regression techinique is used to find out the relationship between a single dependent variable (target variable) on the several independent ones (features). 
 
 For this analysis several regression machine learning techniques from sklearn library are implemented to predict the movie ratings:
@@ -69,9 +69,9 @@ For this analysis several regression machine learning techniques from sklearn li
   6. Extra Tree Regressor - An extremely randomized tree regressor.  Extra-trees differ from classic decision trees in the way they are built
   7. KNeighbors Regressor - Regression based on k-nearest neighbors.  The target is predicted by local interpolation of the targets associated of the nearest neighbors in the training set.
   - *[Selected Models Testing File](Jupyter_Notebook_Files/Static_Data_Algorithm_Testing.ipynb)*
+  
 
-Preprocessing Data:
-
+##### Preprocessing Data:
 
 Data Selection Process included :
 - Reviewing availalbe data columns, types, missing data
@@ -79,7 +79,7 @@ Data Selection Process included :
 - Removed Duplicates
 
 Movies Dataset:
-- Bin Movie Runtime into 5 bins [MoviesRuntime.PNG](Images/MoviesRuntime.PNG)
+- Bin Movie Runtime into 5 bins [MovieRuntime.PNG](Images/MovieRuntime.PNG)
 - Bin Movie Release Year into 9 bins [MovieReleaseYearBins.PNG](Images/MovieReleaseYearBins.PNG)
 - Filter Movie Runtime to keep moves greater than 60 min and less than 180 minutes
 
@@ -92,14 +92,13 @@ Movie Genre Dataset:
 Scale Data using Standard Scalar
 
 
-Feature Selection Techniques Used:
+##### Feature Selection Techniques Used:
 
 - Correlation:
 
 ![correlation_heatmap.PNG](Images/correlation_heatmap.PNG)
 
-- Random Forest Importance
-Features Importance list: ![RandomForestFeatureImpList.PNG](Images/RandomForestFeatureImpList.PNG.PNG)
+- Random Forest Importance:
 
 ![RandomForestFeatureImpFeatures.PNG](Images/RandomForestImpFeatures.PNG)
 
@@ -111,6 +110,7 @@ Features:
 - Movie Release Year
 - Movie Cast ID 
 - Movie Cast Gender
+- Complete list of features, see [RandomForestFeatureImpList.PNG](Images/RandomForestFeatureImpList.PNG)
 
 Target:
 
@@ -118,11 +118,11 @@ Target:
 
 Dataset is split into two parts - 75% of the data is allocated to training and 25% is allocated to testing using train_test_split from sklearn library.
 
-Model Evaluation:
+##### Model Evaluation:
 
 R Squared will be used to determine how well each model has performed and the best performing model will be used to make movie recommendations.
 
-Results:
+##### Results:
 
 The two linear regression techniques which gave the best R Squared values are:
 - Decision Trees Regressor: 
