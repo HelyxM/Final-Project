@@ -18,11 +18,11 @@ What rating would a new film receive, when considered against other films listed
 [Google Slide](https://docs.google.com/presentation/d/1l5JNNvdjFWGLZJCt2bUP6EqvaZgqcJNhIDLShZntfgo/edit?usp=sharing)
 
 ### Roles
-- Harry Manning (Square Role)
-- Falguni Mital (Triangle Role)
-- David Kaye (Circle Role)
-- Daniel Villafane (Circle Role)
-- Jorge Claros (X role)
+- Harry Manning (Github Repository Management)
+- Falguni Mital (Machine Learning Model Creation and Optimization)
+- David Kaye (Database Construction and Organization)
+- Daniel Villafane (Data Visualization Generation and Presentation)
+- Jorge Claros (README File and Project Report Creation)
 
 ### Communication Protocols:
 1. Slack (Main point of Communication)
