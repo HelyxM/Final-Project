@@ -1,4 +1,4 @@
-# An Analysis of the Trends Between Films and User Ratings of Them
+# An Analysis of the Trends Between Films and User Ratings
 
 ### **Segment 3**:
 Film-Rating Database and Analysis
@@ -18,11 +18,11 @@ What rating would a new film receive, when considered against other films listed
 [Google Slide](https://docs.google.com/presentation/d/1l5JNNvdjFWGLZJCt2bUP6EqvaZgqcJNhIDLShZntfgo/edit?usp=sharing)
 
 ### Roles
-- Harry Manning (Square Role)
-- Falguni Mital (Triangle Role)
-- David Kaye (Circle Role)
-- Daniel Villafane (Circle Role)
-- Jorge Claros (X role)
+- Harry Manning (Github Repository Management)
+- Falguni Mital (Machine Learning Model Creation and Optimization)
+- David Kaye (Database Construction and Organization)
+- Daniel Villafane (Data Visualization Generation and Presentation)
+- Jorge Claros (README File and Project Report Creation)
 
 ### Communication Protocols:
 1. Slack (Main point of Communication)
@@ -38,8 +38,6 @@ What rating would a new film receive, when considered against other films listed
 * Amazon Web Services ERD Host
 * Google Slides
 
-#### Preprocessing data:
-- Pandas Corr method will be used to determine the correlation of specific features to the outcome to usderstand if a particular feature is important enough to be fed into the model.
 
 #### Database & ERD Model:
 
@@ -54,6 +52,9 @@ What rating would a new film receive, when considered against other films listed
 ![IntialVis_OverallRating_vs_%23ofRatings](Images/IntialVis_OverallRating_vs_%23ofRatings.png)
 
 #### Machine Learning:
+
+##### ML Techniques Used:
+
 Regression techinique is used to find out the relationship between a single dependent variable (target variable) on the several independent ones (features). 
 
 For this analysis several regression machine learning techniques from sklearn library are implemented to predict the movie ratings:
@@ -68,14 +69,48 @@ For this analysis several regression machine learning techniques from sklearn li
   6. Extra Tree Regressor - An extremely randomized tree regressor.  Extra-trees differ from classic decision trees in the way they are built
   7. KNeighbors Regressor - Regression based on k-nearest neighbors.  The target is predicted by local interpolation of the targets associated of the nearest neighbors in the training set.
   - *[Selected Models Testing File](Jupyter_Notebook_Files/Static_Data_Algorithm_Testing.ipynb)*
+  
+
+##### Preprocessing Data:
+
+Data Selection Process included :
+- Reviewing availalbe data columns, types, missing data
+- Removed Nulls
+- Removed Duplicates
+
+Movies Dataset:
+- Bin Movie Runtime into 5 bins [MovieRuntime.PNG](Images/MovieRuntime.PNG)
+- Bin Movie Release Year into 9 bins [MovieReleaseYearBins.PNG](Images/MovieReleaseYearBins.PNG)
+- Filter Movie Runtime to keep moves greater than 60 min and less than 180 minutes
+
+Ratings Dataset:
+- Filter Ratings - Keep ratings for movies which have more than 5000 ratings 
+
+Movie Genre Dataset:
+- Transform Movie Genre from Category to Numerical Value
+
+Scale Data using Standard Scalar
+
+
+##### Feature Selection Techniques Used:
+
+- Correlation:
+
+![correlation_heatmap.PNG](Images/correlation_heatmap.PNG)
+
+- Random Forest Importance:
+
+![RandomForestFeatureImpFeatures.PNG](Images/RandomForestImpFeatures.PNG)
+
 
 Features:
 
 - Movie Genre
-- Movie Duration
-- Movie Cast
-- Movie Year
-- Movie ID
+- Movie Runtime
+- Movie Release Year
+- Movie Cast ID 
+- Movie Cast Gender
+- Complete list of features, see [RandomForestFeatureImpList.PNG](Images/RandomForestFeatureImpList.PNG)
 
 Target:
 
@@ -83,18 +118,18 @@ Target:
 
 Dataset is split into two parts - 75% of the data is allocated to training and 25% is allocated to testing using train_test_split from sklearn library.
 
-Model Evaluation:
+##### Model Evaluation:
 
 R Squared will be used to determine how well each model has performed and the best performing model will be used to make movie recommendations.
 
-Results:
+##### Results:
 
 The two linear regression techniques which gave the best R Squared values are:
 - Decision Trees Regressor: 
     R Squared: 0.18955758578603576
     - [Jupyter Notebook File with Code](Jupyter_Notebook_Files/ML_DF_Creation_and_Testing.ipynb)
 - Random Forest Regressor: 
-    R Squared: 0.06629806453758591
+    R Squared: 0.06641313954915906
     - [Jupyter Notebook File With Code](Jupyter_Notebook_Files/movies_ML_Analysis.ipynb)
     
 The remaining techniques: Linear Regresion, Lasso, Gaussian Process Regressor, KNeighbor Regressor, all resulted in lower R Squared values and were not considered for generating the final model predictions. In addition, the Gaussian Regressor Technique requires more memory than currently available on any machine to run the full dataset, and reduced versions of the dataset would limit the use that such a model would offer for understanding our full dataset.
