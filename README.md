@@ -1,7 +1,6 @@
 # An Analysis of the Trends Between Films and User Ratings
 
-### **Segment 3**:
-Film-Rating Database and Analysis
+## **Film-Rating Database and Analysis**
 
 #### **Reason For Selection**:
 The reason we selected this topic is because streaming services are currently on the rise. There are multiple streaming services to choose from and what's better than a streaming service that knows the consumer best? By taking our algorithm we are able to predict which new film would best fit the consumer. 
@@ -15,7 +14,7 @@ What rating would a new film receive, when considered against other films listed
 - [The Movies Dataset- Kaggle](https://www.kaggle.com/rounakbanik/the-movies-dataset?select=ratings_small.csv)
 
 ### Google Slides
-[Google Slide](https://docs.google.com/presentation/d/1l5JNNvdjFWGLZJCt2bUP6EqvaZgqcJNhIDLShZntfgo/edit?usp=sharing)
+[Google Slides](https://docs.google.com/presentation/d/1l5JNNvdjFWGLZJCt2bUP6EqvaZgqcJNhIDLShZntfgo/edit?usp=sharing)
 
 ### Roles
 - Harry Manning (Github Repository Management)
@@ -126,8 +125,8 @@ R Squared will be used to determine how well each model has performed and the be
 
 The two linear regression techniques which gave the best R Squared values are:
 - Decision Trees Regressor: 
-    R Squared: 0.18955758578603576
-    - [Jupyter Notebook File with Code](Jupyter_Notebook_Files/ML_DF_Creation_and_Testing.ipynb)
+    R Squared: 0.1896050371860699
+    - [Jupyter Notebook File with Code](Jupyter_Notebook_Files/ML_Dataframe_and_Model_Creation.ipynb)
 - Random Forest Regressor: 
     R Squared: 0.06641313954915906
     - [Jupyter Notebook File With Code](Jupyter_Notebook_Files/movies_ML_Analysis.ipynb)
